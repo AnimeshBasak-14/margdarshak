@@ -1,0 +1,41 @@
+{
+  "_doc": [
+    "Websites Raah watches, one entry per page that lists notices.",
+    "state: two-letter code used by the app (IN = central / all-India).",
+    "status: active = scraped every run; needs_browser = page is built by JavaScript, scraped only with --browser;",
+    "blocked = site refuses automated clients (we respect that, ask for a feed instead);",
+    "broken = site is down or misconfigured at last check.",
+    "tls: legacy = server needs legacy TLS renegotiation (old government servers).",
+    "allow_domains: extra domains this commission legitimately links to (its own recruitment portal).",
+    "Statuses last checked 2026-10-30."
+  ],
+  "sources": [
+    {"id": "appsc", "state": "AR", "name": "Arunachal Pradesh Public Service Commission", "url": "https://appsc.gov.in/Index/sub_page/doc12233/Notifications", "status": "active"},
+    {"id": "apsc", "state": "AS", "name": "Assam Public Service Commission", "url": "https://apsc.nic.in/", "status": "active", "allow_domains": ["apscrecruitment.in"]},
+    {"id": "bpsc", "state": "BR", "name": "Bihar Public Service Commission", "url": "https://bpsc.bihar.gov.in/", "status": "active"},
+    {"id": "gpsc", "state": "GJ", "name": "Gujarat Public Service Commission", "url": "https://gpsc.gujarat.gov.in/", "status": "active"},
+    {"id": "hpsc", "state": "HR", "name": "Haryana Public Service Commission", "url": "https://hpsc.gov.in/", "status": "active"},
+    {"id": "hppsc", "state": "HP", "name": "Himachal Pradesh Public Service Commission", "url": "https://hppsc.hp.gov.in/", "status": "active", "tls": "legacy"},
+    {"id": "jpsc", "state": "JH", "name": "Jharkhand Public Service Commission", "url": "https://jpsc.gov.in/", "status": "active"},
+    {"id": "mppsc", "state": "MP", "name": "Madhya Pradesh Public Service Commission", "url": "https://www.mppsc.mp.gov.in/", "status": "active"},
+    {"id": "ppsc", "state": "PB", "name": "Punjab Public Service Commission", "url": "https://ppsc.gov.in/", "status": "active"},
+    {"id": "rpsc", "state": "RJ", "name": "Rajasthan Public Service Commission", "url": "https://rpsc.rajasthan.gov.in/", "status": "active"},
+    {"id": "ukpsc", "state": "UK", "name": "Uttarakhand Public Service Commission", "url": "https://psc.uk.gov.in/", "status": "active"},
+
+    {"id": "ssc", "state": "IN", "name": "Staff Selection Commission", "url": "https://ssc.gov.in/", "status": "needs_browser"},
+    {"id": "tnpsc", "state": "TN", "name": "Tamil Nadu Public Service Commission", "url": "https://www.tnpsc.gov.in/", "status": "needs_browser"},
+    {"id": "mpsc", "state": "MH", "name": "Maharashtra Public Service Commission", "url": "https://mpsc.gov.in/", "status": "needs_browser"},
+    {"id": "keralapsc", "state": "KL", "name": "Kerala Public Service Commission", "url": "https://www.keralapsc.gov.in/", "status": "needs_browser"},
+    {"id": "opsc", "state": "OD", "name": "Odisha Public Service Commission", "url": "https://opsc.gov.in/", "status": "needs_browser"},
+    {"id": "tgpsc", "state": "TG", "name": "Telangana Public Service Commission", "url": "https://www.tgpsc.gov.in/", "status": "needs_browser"},
+    {"id": "appsc_ap", "state": "AP", "name": "Andhra Pradesh Public Service Commission", "url": "https://psc.ap.gov.in/", "status": "needs_browser"},
+
+    {"id": "upsc", "state": "IN", "name": "Union Public Service Commission", "url": "https://upsc.gov.in/", "status": "blocked"},
+    {"id": "pib", "state": "IN", "name": "Press Information Bureau", "url": "https://pib.gov.in/", "status": "blocked"},
+
+    {"id": "uppsc", "state": "UP", "name": "Uttar Pradesh Public Service Commission", "url": "https://uppsc.up.nic.in/", "status": "broken", "note": "connection timed out"},
+    {"id": "wbpsc", "state": "WB", "name": "West Bengal Public Service Commission", "url": "https://wbpsc.gov.in/", "status": "broken", "note": "connection timed out"},
+    {"id": "kpsc", "state": "KA", "name": "Karnataka Public Service Commission", "url": "https://kpsc.kar.nic.in/", "status": "broken", "note": "server sends malformed HTTP headers"},
+    {"id": "cgpsc", "state": "CG", "name": "Chhattisgarh Public Service Commission", "url": "https://psc.cg.gov.in/", "status": "broken", "note": "not yet verified"}
+  ]
+}
